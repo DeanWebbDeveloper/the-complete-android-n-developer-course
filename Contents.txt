@@ -7,3 +7,6 @@
 2		-	Introduction To Android Studio
 
 	2.5			-	Android Studio Overview
+	2.7			-	Opening Sample Projects (Android Studio files)
+	2.8			-	Formatting Text
+	2.10		-	Buttons
