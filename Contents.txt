@@ -10,3 +10,7 @@
 	2.7			-	Opening Sample Projects (Android Studio files)
 	2.8			-	Formatting Text
 	2.10		-	Buttons
+	2.12		-	Text Fields
+	2.14		-	Displaying Messages
+	2.16		-	Images
+	2.18		-	Currency Converter
