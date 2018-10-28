@@ -14,3 +14,14 @@
 	2.14		-	Displaying Messages
 	2.16		-	Images
 	2.18		-	Currency Converter
+
+3		-	Java Deep Dive
+
+	3.2			-	Hello World With Java
+	3.4			-	Variables
+	3.6			-	Arrays and Maps
+	3.8			-	If Statements
+	3.10		-	Higher or Lower
+	3.12		-	Loops
+	3.14		-	Classes and Objects
+	3.16		-	App Number Shapes

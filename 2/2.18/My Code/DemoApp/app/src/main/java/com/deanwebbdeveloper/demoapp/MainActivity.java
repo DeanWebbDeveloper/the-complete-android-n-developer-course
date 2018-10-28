@@ -10,8 +10,6 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     public void convertCurrency(View view) {
 
         EditText currencyEntry = (EditText) findViewById(R.id.currencyEntry);
