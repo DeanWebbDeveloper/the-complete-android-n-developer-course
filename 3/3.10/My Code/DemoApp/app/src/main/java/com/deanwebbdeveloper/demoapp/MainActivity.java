@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 result = "The number must be between 1 and 20";
             } else if (numberSelectedInt == numberGenerated) {
                 result = "Congratulations! The number was " + String.valueOf(numberGenerated);
+                numberGenerated = new Random().nextInt(20) + 1;
             } else if (numberSelectedInt > numberGenerated) {
                 result = "Lower!";
             } else if (numberSelectedInt < numberGenerated) {
