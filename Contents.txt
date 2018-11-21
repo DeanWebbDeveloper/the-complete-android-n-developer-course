@@ -25,3 +25,9 @@
 	3.12		-	Loops
 	3.14		-	Classes and Objects
 	3.16		-	App Number Shapes
+
+4		-	Media: Images, Video and Sound
+
+	4.2			-	Layout
+	4.4			-	Fading Animations
+	4.6			-	Other Animations
