@@ -13,117 +13,138 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
-        android:text="Connect 3 in a row to win!"
+        android:layout_marginBottom="24dp"
+        android:text="@string/description"
+        app:layout_constraintBottom_toTopOf="@+id/topRow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:id="@+id/topRow"
+        android:layout_width="344dp"
         android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/grid"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/midRow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <ImageView
+            android:id="@+id/topLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:contentDescription="@string/top_left"
+            app:srcCompat="@drawable/red" />
 
-            <ImageView
-                android:id="@+id/leftTop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-
-            <ImageView
-                android:id="@+id/centreTop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-
-            <ImageView
-                android:id="@+id/rightTop"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <ImageView
+            android:id="@+id/topCentre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:contentDescription="@string/top_centre"
+            app:srcCompat="@drawable/red" />
 
-            <ImageView
-                android:id="@+id/leftCentre"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-
-            <ImageView
-                android:id="@+id/trueCentre"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-
-            <ImageView
-                android:id="@+id/rightCentre"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <ImageView
+            android:id="@+id/topRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="51dp">
+            android:contentDescription="@string/top_right"
+            app:srcCompat="@drawable/red" />
+    </LinearLayout>
 
-            <ImageView
-                android:id="@+id/leftBottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
+    <LinearLayout
+        android:id="@+id/midRow"
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btmRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topRow">
 
-            <ImageView
-                android:id="@+id/centreBottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
+        <ImageView
+            android:id="@+id/midLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/mid_left"
+            app:srcCompat="@drawable/red" />
 
-            <ImageView
-                android:id="@+id/rightBottom"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/red" />
+        <ImageView
+            android:id="@+id/midCentre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/mid_centre"
+            app:srcCompat="@drawable/red" />
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/midRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/mid_right"
+            app:srcCompat="@drawable/red" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/btmRow"
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/description"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midRow">
+
+        <ImageView
+            android:id="@+id/btmLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/btm_left"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/btmCentre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/btm_centre"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/btmRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/btm_right"
+            app:srcCompat="@drawable/red" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

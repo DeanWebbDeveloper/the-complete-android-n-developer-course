@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Connect3</string>
+    <string name="description">Connect 3 in a row to win!</string>
+    <string name="top_left">Top Left</string>
+    <string name="top_centre">TopCentre</string>
+    <string name="top_right">Top Right</string>
+    <string name="mid_left">Middle Left</string>
+    <string name="mid_centre">Middle Centre</string>
+    <string name="mid_right">Middle Right</string>
+    <string name="btm_left">Bottom Left</string>
+    <string name="btm_centre">Bottom Centre</string>
+    <string name="btm_right">Bottom Right</string>
 </resources>
