@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Connect3</string>
+    <string name="description_info">Description</string>
+    <string name="current_status_info">Current Status</string>
     <string name="description">Connect 3 in a row to win!</string>
+    <string name="current_status">Ready to Play</string>
     <string name="top_left">Top Left</string>
     <string name="top_centre">TopCentre</string>
     <string name="top_right">Top Right</string>
@@ -10,4 +13,5 @@
     <string name="btm_left">Bottom Left</string>
     <string name="btm_centre">Bottom Centre</string>
     <string name="btm_right">Bottom Right</string>
+    <string name="grid_lines">Grid Lines</string>
 </resources>
